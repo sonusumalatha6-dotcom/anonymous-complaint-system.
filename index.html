@@ -7,12 +7,13 @@
 
 <h2>Anonymous Complaint & Suggestion System</h2>
 
-<form>
+<form onsubmit="showMessage(); return false;">
   <label>Category:</label><br>
   <select>
     <option>Academic</option>
     <option>Hostel</option>
     <option>Infrastructure</option>
+
     <option>Safety</option>
   </select><br><br>
 
@@ -24,5 +25,9 @@
 
 <p><i>No personal data is collected</i></p>
 
-</body>
+<script>
+function showMessage() {
+  alert("Complaint submitted successfully!");
+}
+</script></body>
 </html>
